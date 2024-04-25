@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doc Calcular</title>
+</head>
+<body>
+    <script>
+        function aplicarDescon(preco, desconto){
+  let valorD = preco * (desconto / 100);
+  let precoF = preco - valorD;
+  
+  return precoF;
+}
+
+
+let precoFinalproduto1 = aplicarDescon(100, 10);
+console.log (`valor final ${precoFinalproduto1}`);
+    </script>
+    
+    
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script> 
+ let livros = [
+      {
+ titulo: "Ogulho e Preconceito",
+ autor: "Janwe Austem",
+ ano: 1813,
+ emprestado: false,
+ categorias: ["Romance", "Drama"],
+ revisoes: [
+{
+ comentario: "Muito bom!",
+ avaliacao: 5
+    },  {
+           comentario: "Adorei.",
+           avaliacao: 4
+                    }
+                ]
+            },
+               
+            
+            {
+    titulo: "Harry Potter e o cálice de fogo",
+    autor: " J.K. Rowling",
+    ano: 2000,
+    emprestado: false,
+    categorias: ["Ficção Científica", "Fantasia"],
+    revisoes: [
+        {
+            comentario: "Realmente bom.",
+            avaliacao: 5
+        },
+        {
+            comentario: "Incrivelmente relevante",
+            avaliacao: 5
+        }
+                ]
+            }
+        ];
+        var livroemprestado = "Não";
+        if(livros[0].emprestado){
+            livroemprestado = "Sim"
+        }
+        console.log(livroemprestado);
+ console.log(`Título: ${livros[0].titulo}, 
+ Autor: ${livros[0].autor},
+  Ano: ${livros[0].ano}, 
+  Emprestado: ${livros[0].emprestado ? 'Sim' : 'Não'}, 
+  Categoria: ${livros[0].categorias[0]},
+   Avaliação: ${livros[0].revisoes[0].avaliacao} `);
+
+
+
+
+    </script>
+</body>
+</html>
